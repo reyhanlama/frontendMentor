@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/reyhanlama/frontendMentor/main/Solutions/stats-preview-card-component-main/Screenshot.png)
 
 ### Links
 
