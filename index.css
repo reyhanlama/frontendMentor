@@ -26,6 +26,13 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: none;
+  margin-bottom: 0;
+}
 
 h1 {
   text-align: center;
