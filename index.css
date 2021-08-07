@@ -83,3 +83,13 @@ img {
 .project:hover {
   opacity: 50%;
 }
+
+@media only screen and (min-width: 400px) {
+  body {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
