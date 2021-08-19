@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --BlueShadow: rgba(131, 166, 210, 35%);
+  --BlueShadowHover: rgba(131, 166, 210, 30%);
+  --Blue: hsl(212, 86%, 64%);
+  --DarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --LightGray: hsl(0, 0%, 98%);
+}
+body,
+p,
+a,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: var(--LightGray);
+  color: var(--DarkBlue);
+}
+h1 {
+  font-weight: 200;
+  font-size: 2em;
+}
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+}
+main {
+  margin-top: 80px;
+  padding: 0;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+header p {
+  margin-top: 20px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.card {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px var(--BlueShadow);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.card.cyan {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+.card.red {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.card.orange {
+  grid-column: 2/3;
+  grid-row: 3/5;
+}
+.card.blue {
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+img {
+  padding-top: 30px;
+}
+
+.card.cyan {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+.card.red {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+.card.orange {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+.card.blue {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    padding: 0 32px;
+    min-width: 375px;
+    margin: 0 auto;
+    margin-top: 85px;
+  }
+  .cards {
+    display: block;
+  }
+}
